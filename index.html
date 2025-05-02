@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interactive Button Section -->
+    <section>
+        <h1>Interactive Button</h1>
+        <button id="magicButton">Click Me!</button>
+        <p id="buttonStatus">Waiting for action...</p>
+    </section>
+
+    <!-- Image Slideshow Section -->
+    <section>
+        <h1>Image Slideshow</h1>
+        <div class="slideshow-container">
+            <img class="slide" src="https://via.placeholder.com/600x300?text=Image+1" alt="Slide 1">
+            <img class="slide" src="https://via.placeholder.com/600x300?text=Image+2" alt="Slide 2">
+            <img class="slide" src="https://via.placeholder.com/600x300?text=Image+3" alt="Slide 3">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section>
+        <h1>Content Tabs</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+        </div>
+        <div id="Tab1" class="tabcontent">
+            <h3>Tab 1 Content</h3>
+            <p>This is the content for Tab 1.</p>
+        </div>
+        <div id="Tab2" class="tabcontent">
+            <h3>Tab 2 Content</h3>
+            <p>This is the content for Tab 2.</p>
+        </div>
+        <div id="Tab3" class="tabcontent">
+            <h3>Tab 3 Content</h3>
+            <p>This is the content for Tab 3.</p>
+        </div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section>
+        <h1>Form Validation</h1>
+        <form id="userForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <span id="nameError" class="error"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
